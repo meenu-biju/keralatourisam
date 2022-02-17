@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activities for you</title>
+</head>
+<body>
+{% include "html/header.html" %}
+<div class="row">
+  <div class="col-sm-3">
+<div class="card bg-dark text-white">
+  <img src="{% static 'images/kalari.jpeg' %}" class="card-img" alt="..." width="350px;" height="350px">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Kalaripayattu</h5>
+    <p class="card-text">Kalaripayattu also known simply as Kalari, is an Indian martial art that originated in modern-day Kerala. </div>
+</div>
+</div>
+     <div class="col-sm-3">
+<div class="card bg-dark text-black">
+  <img src="{% static 'images/yoga.jpeg' %}" class="card-img" alt="..." width="350px;" height="350px">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Yoga</h5>
+    <p class="card-text">Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation</p>
+     </div>
+</div>
+</div>
+        <div class="col-sm-3">
+<div class="card bg-dark text-white">
+  <img src="{% static 'images/festival.jpeg' %}" class="card-img" alt="..." width="350px;" height="350px">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Festivals</h5>
+    <p class="card-text">Visiting Kerala during one of the major festivals would be treat for domestic and international tourists as it will be a visual bonanza and a happily full stomach.</p>
+      </div>
+</div>
+</div>
+     <div class="col-sm-3">
+<div class="card bg-dark text-white">
+  <img src="{% static 'images/trekking2.jpeg' %}" class="card-img" alt="..." width="350px;" height="350px">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Trekking</h5>
+    <p class="card-text">The act of making a long journey across difficult country on foot, usually for pleasure. trekking through the jungles. This year we're going trekking in Nepal. to go on a trekking holiday.</p>
+     </div>
+</div>
+</div>
+</div>
+{% include "html/footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Newsletter</title>
+</head>
+<body>
+{% include "html/header.html" %}
+
+<form class="row g-3" action="/tourisamapp/save2" method="post">
+    {% csrf_token %}
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">email</label>
+    <input type="email" name="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">password</label>
+    <input type="password"  name="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">address</label>
+    <input type="text" name="address" class="form-control" id="inputAddress">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">address 2</label>
+    <input type="text" name="address2" class="form-control" id="inputAddress2">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">city</label>
+    <input type="text" name="city" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">state</label>
+    <select id="inputState" name="state" class="form-select">
+      <option selected>Choose State</option>
+        <option>Kerala</option>
+        <option>TamilNadu</option>
+        <option>Karnataka</option>
+
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">zip</label>
+    <input type="text" name="zip" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" name="check" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Send Request</button>
+  </div>
+    <div>{{ b }}</div>
+</form>
+{% include "html/footer.html" %}
+
+
+
+</body>
+</html>

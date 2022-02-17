@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME PAGE</title>
+
+</head>
+<body>
+{% include "html/header.html" %}
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/img1.png' %}" width="100%;" height="500px;" alt="image1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-family: Arial Black;font-size: 35px;">Mesmerizing Kerala</h5>
+        <p style="font-family: Arial Black;font-size: 25px;">" No hour of life is wasted that is spent in Kerala."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/img2.png' %}" width="100%;" height="500px;" alt="image2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5  style="font-family: Arial Black;font-size: 35px; text-align: left; ">Ready get Out......</h5>
+        <p style="font-family: Arial Black;font-size: 25px; text-align: left;" t>Learn how to get out of your comfort zone, do things on your own, and sometimes you can even get to surprise yourself.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/img3.png' %}" width="100%;" height="500px;" alt="image3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-family: Arial Black;font-size: 35px;">Explore the Culture and Rhythm</h5>
+        <p style="font-family: Arial Black;font-size: 25px;">Enjoy the melody plus rhythm of the various Classical and folk Dances.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container border bg-light">
+    <h2 style="font-family: Arial Rounded MT Bold; padding-top: 20px;"><center><u>Land Of Beauty & Wonders</u></center></h2>
+<p style="font-family: Arial Narrow; font-size: 16px; text-align: justify; padding-top:30px; padding-bottom:50px;"><b>Kerala, a state situated on the tropical Malabar Coast of southwestern India, is one of the most popular tourist destinations in the country. Named as one of the ten paradises of the world by National Geographic Traveler,
+    Kerala is famous especially for its ecotourism initiatives and beautiful backwaters. Its unique culture and traditions, coupled with its varied demography,
+    have made Kerala one of the most popular tourist destinations in the world. Kerala is regarded as one of the destinations with the highest brand recall. In 2010, Kerala attracted 660,000 foreign tourist arrivals.The state's tourism agenda promotes ecologically sustained tourism, which focuses on the local culture,
+    wilderness adventures, volunteering and personal growth of the local population. Efforts are taken to minimize the adverse effects of traditional tourism on the natural environment and enhance the cultural integrity of local people.</b></p>
+</div>
+<div>
+    {% include "html/footer.html" %}
+</div>
+</body>
+</html>

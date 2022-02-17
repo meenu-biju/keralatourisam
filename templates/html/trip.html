@@ -1,0 +1,41 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trips</title>
+</head>
+<body>
+{% include "html/header.html" %}
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Kovalam Beach</h5>
+
+  <img src="{% static 'images/kovalam.jpeg' %}" class="card-img-top" alt="..." width="350px;" height="350px">
+          <p><h5>Getting there</h5></p>
+          <p>Nearest railway station:-- Thiruvananthapuram Central, about 16 km.</p>
+            <p>   Nearest airport:--Trivandrum International Airport, about 10 km.</p><br>
+          <a href="/tourisamapp/accomodation" class="btn btn-info"><b>Click For Where To Stay</b></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Athirappily Waterfalls</h5>
+           <img src="{% static 'images/athirapilly.jpeg' %}" class="card-img-top" alt="..." width="350px;" height="350px">
+          <p><h5>Getting there</h5></p>
+          <p>Nearest railway station:-- Thrissur (Major station) about 63 km & Chalakkudy, about 35 km.</p>
+            <p>  Nearest airport:-- Cochin International Airport, about 58 km from Thrissur, is the nearest airport.</p>
+        <a href="/tourisamapp/accomodation" class="btn btn-info"><b>Click For Where To Stay</b></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "html/footer.html" %}
+
+</body>
+</html>

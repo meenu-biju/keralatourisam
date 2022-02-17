@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>where to stay</title>
+</head>
+<body>
+{% include "html/header.html" %}
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+  <img src="{% static 'images/munnar.jpeg' %}" class="card-img-top" alt="..." width="350px;" height="350px">
+      <h5 style="font-family:Arial Black; text-align: center;">Munnar</h5>
+    <p style="font-family: Century; text-align: justify;">Munnar is a town in the Western Ghats mountain range in India’s Kerala state. A hill station and former resort for the British Raj elite, it's surrounded by rolling hills dotted with tea plantations established in the late 19th century.Munnar is also called the "Kashmir of South India" and is a popular honeymoon destination.</p>
+
+  </div>
+    </div>
+  </div>
+     <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+  <img src="{% static 'images/beach.jpeg' %}" class="card-img-top" alt="..." width="350px;" height="350px">
+      <h5 style="font-family:Arial Black; text-align: center;">Kovalam Beach</h5>
+    <p style="font-family: Century; text-align: justify;">Kovalam is famous for its beaches, among the most pristine in India. Kovalam is extremely popular among westerners due to shallow waters and low tidal waves. It is also one of the oldest tourist enclave in India, which known among tourist circuit right in 1930s.</p>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="{% static 'images/boat2.jpeg' %}" class="card-img-top" alt="..." width="350px;" height="350px">
+      <h5 style="font-family:Arial Black; text-align: center;">Alleppey</h5>
+    <p style="font-family: Century; text-align: justify;">Alappuzha has always been a vital trade centre since ancient times. These days it has become one of the most sought out tourist destinations in the State. Thanks to its unique backwaters, boat races, beaches and an assortment of marine products, it is a must visit for all who seek to explore Kerala's vast beauty.</p>
+
+  </div>
+</div>
+  </div>
+</div>
+{% include "html/footer.html" %}
+</body>
+</html>
